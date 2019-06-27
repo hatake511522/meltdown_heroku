@@ -1,0 +1,54 @@
+.post {
+  border-radius: 7px;
+  color: $text-secondary;
+  padding: 0;
+  margin: 10px;
+  max-width: 346px;
+  transition: all 200ms 0s ease;
+  background-color: #1a1a1a;
+  box-shadow: 0px 3px #171313;
+  &:hover {
+    color: $text-secondary-hover;
+    background-color: $theme-color;
+  }
+
+  .image-area {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .post-detail {
+    padding: 0px 15px 0px 15px;
+    ul {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 10px;
+    }
+
+    hr {
+      margin: 0;
+      border: 0.5px solid $text-secondary;
+    }
+
+    .post-user-icon {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $text-secondary;
+    }
+
+    .post-user-index {
+      .post-user-title{
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+}

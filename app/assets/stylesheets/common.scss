@@ -1,0 +1,123 @@
+/*theme color*/
+$theme-color: #f8cccd;
+
+/*base color*/
+$base-primary: #0a0a0a;
+$base-secondary: rgba(white, 10%);
+
+/* text color */
+$text-secondary: #737373;
+$text-secondary-hover: white;
+
+/*NOTE: 以前のブレイクポイントでは限界
+https://nuconeco.net/responsive-ui-breakpoints/
+*/
+/*-スマホを基本設計としてブレイクポイント
+ -       〜  479px：SP縦      sp-vertical
+ - 480px〜 599px：SP横       sp-horizontal
+ - 600px〜 959px：タブレット   tablet
+ - 960px〜1279px：小型PC    small-pc
+ - 1280px〜：大型PC          large-pc
+====================*/
+
+/* 〜479px：SP縦
+------------------------------ */
+
+.raidus-hover {
+  color: $text-secondary;
+  border-radius: 23px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  &:hover {
+    color: white;
+    background-color: rgba(white,10%);
+  }
+}
+
+
+/* 480px〜599px：SP横
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) { 
+}
+
+/* 600px〜959px：タブレット
+------------------------------ */
+@media screen and (min-width:600px) and (max-width:959px) {
+}
+
+/* 960px〜1279px：小型PC
+------------------------------ */
+@media screen and (min-width:960px) and (max-width:1279px) {
+  
+}
+/* 1280px〜：大型PC
+------------------------------ */
+@media screen and (min-width:1280px) {
+}
+
+
+/*-- PC版表示CSS  --*/
+.pc　{
+  display:block;
+}
+
+.phone　{
+  display:none;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: font-url('segoe-ui.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeadLineText';
+  src: font-url('texgyreadventor-bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*-- スマホ版表示CSS  --*/
+@media screen and (max-width: 768px){
+  .pc　{
+    display:none;
+  }
+  .phone　{
+    display:block;
+  }
+}
+
+.bg-color {
+  background-color: $base-primary;
+}
+
+.headline-text {
+  font-family: 'HeadLineText';
+  font-weight: 600;
+  color: $theme-color;
+  padding-bottom: 0.5vh;
+}
+
+.headline-border {
+  width: 100%;
+  border: 2px solid $theme-color;
+}
+
+.tag {
+  height: 30px;
+  border-radius: 15px;
+  a {
+    color: $text-secondary;
+    font-weight: 600;
+    &:hover {
+      color: $text-secondary-hover;
+    }
+  }
+  &:hover {
+    background-color: $base-secondary;
+  }
+}

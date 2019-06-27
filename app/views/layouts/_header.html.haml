@@ -1,0 +1,55 @@
+.d-md-none.d-sm-none.header-lg
+  %nav
+    .nav-area.d-flex.align-items-center
+      %ul.nav-menu
+        %li
+          .nav-logo-area
+            .nav-logo
+              = link_to image_tag("meltdown_fav.png", :width => "30") , root_path
+        %li.nav-search
+          = link_to "#" do
+            %i.fas.fa-search
+
+        - if user_signed_in?
+          %li
+            .nav-icon-area
+              = link_to "/users/show" do
+                .nav-icon
+          %li
+            .nav-plus-area
+              = link_to new_post_path do
+                %i.fas.fa-plus.pc
+                  投稿
+        - else
+          %li
+            = link_to user_session_path do
+              %i.fas.fa-user-plus.pc
+                ログイン
+              %i.fas.fa-user-plus.phone           
+
+.container.d-lg-none.d-xl-none.header-md
+  .row.nav-area
+    .col-md-3.text-center
+      = link_to image_tag("meltdown_fav.png"), root_path
+    .col-md-3.text-center
+      = link_to image_tag("meltdown_fav.png"), root_path
+    .col-md-3.text-center
+      = link_to image_tag("meltdown_fav.png"), root_path
+    .col-md-3.text-center
+      = link_to image_tag("meltdown_fav.png"), root_path         
+
+-# .container.d-lg-none.d-xl-none.header-md
+-#   .row
+-#     .col-md-4
+-#       .nav-logo-area.ml-2.mr-2
+-#         .nav-logo
+-#           = link_to image_tag("meltdown_fav.png", :width => "30") , root_path
+-#     .col-md-4
+-#       .nav-logo-area.ml-2.mr-2
+-#         .nav-logo
+-#           = link_to image_tag("meltdown_fav.png", :width => "30") , root_path
+-#     .col-md-4
+-#       .nav-logo-area.ml-2.mr-2
+-#         .nav-logo
+-#           = link_to image_tag("meltdown_fav.png", :width => "30") , root_path
+%hr.nav-border

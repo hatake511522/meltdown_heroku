@@ -1,0 +1,74 @@
+/* user form */
+
+.form-area {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  //width: 80%;
+  //border: 1px solid #aaa;
+  //border-radius: 10px;
+  color: white;
+}
+
+.form-btn {
+  margin: 20px 0px 10px 0px;
+  color: $theme-color;
+  background-color: $base-primary;
+  border: 1px solid $theme-color;
+  border-radius: 20px;
+  width: 100%;
+  &:hover {
+    background-color: $theme-color;
+    color: black;
+  }
+}
+
+.form-inputs {
+  input {
+    background-color: $base-primary;
+    border: none;
+    border-bottom: 1px solid $theme-color;
+    color: white;
+    &:focus {
+      background-color: $base-secondary;
+      outline: 0;
+    }
+  }
+}
+
+.users-main-content {
+  margin-top: 150px;
+}
+
+.user-logo {
+  img {
+    //なぜか縦横比崩れる
+    //width: 30%;
+    //height: auto;
+  }
+}
+
+/*post form*/
+
+.form-comment {
+  color: white;
+  textarea {
+    color:white;
+    //resize: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(white, 30%);
+    height: 300px;
+  }
+}
+
+.form-url ,.form-title{
+  color: white;
+  input {
+    color:white;
+    border: none;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgba(white, 30%);
+  }
+}

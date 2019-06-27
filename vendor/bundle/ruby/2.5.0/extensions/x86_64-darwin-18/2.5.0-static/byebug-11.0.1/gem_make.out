@@ -1,0 +1,19 @@
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+/Users/hatahiroki/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190627-2023-1etbzwo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190627-2023-1d8dg3d/byebug

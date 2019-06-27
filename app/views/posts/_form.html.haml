@@ -1,0 +1,13 @@
+.row.justify-content-center
+  = simple_form_for @post do |f|
+    .col-10
+      .row
+        .col-12.form-url
+          = f.input :url, label: "URL",as: :string
+        .col-12.form-title
+          = f.input :title, label: "タイトル"
+          /-= f.input :thumbnail, as: :file, label: "サムネイルを選択"
+        .col-12.form-comment
+          = f.input :comment, label: "コメント", as: :text
+        .col-12
+          = f.submit "投稿", class: "btn btn-secondary"

@@ -1,0 +1,39 @@
+.container
+  .row.justify-content-center.show-main-content
+    .col-md-8.primary
+      .row.player
+        %iframe{allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        allowfullscreen: "",
+        frameborder: "0",
+        height: "457",
+        src: "#{@post.url}",
+        width: "760"}
+      .row.rate
+        .col-6.like-button
+          %button{type: "submit"}
+            %i.far.fa-thumbs-up
+        .col-6.dislike-button
+          %button{type: "submit"}
+            %i.far.fa-thumbs-down
+        .col-12
+          .tips
+            Rate This Video!
+        .show-title
+          ="#{@post.title}"
+        .row.show-info
+          .col-2
+            pv
+          .col-2
+            likes
+
+        .row.justify-content-start
+          -(1..10).each do |i|
+            .tag
+              .col-auto
+                \#tag
+
+  .row.secondary
+    .posts-title
+      こちらもおすすめ
+    .row
+      =render "layouts/post"

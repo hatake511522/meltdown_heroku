@@ -1,0 +1,16 @@
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+/Users/hatahiroki/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190627-2023-e8zvrs.rb extconf.rb
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/hatahiroki/Documents/meltdown_postgresql/vendor/bundle/ruby/2.5.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

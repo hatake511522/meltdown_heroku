@@ -1,0 +1,27 @@
+.row.justify-content-center.mt-2
+  -(1..15).each do |i|
+    .tag.col-auto
+      = link_to "\#tag" , "#"
+
+.row
+  %h1.headline-text
+    NewArrivals
+.row    
+  %hr.headline-border.mb-2
+.row
+  - @posts.each do |post|
+    .col-sm-6.col-md-6.col-lg-3.col-xl-3
+      .post
+        = link_to post, class: "w-100" do
+          = image_tag post.thumbnail, class: "image-area"
+        .post-detail
+          %ul
+            %li.post-user-index
+              .post-user-title
+                PlaceHolder
+          %hr
+          %ul
+            %li
+              %i.fas.fa-heart
+            %li
+              %i.far.fa-eye

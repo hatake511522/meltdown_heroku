@@ -1,0 +1,22 @@
+.container
+  .row
+    .col-12
+      = link_to "新規投稿", new_post_path, class: 'btn btn-primary'
+  .row
+    .col-12
+      - if @posts.present?
+        .table-responsive
+          %table.table.table-striped.table-hover
+            %tr
+              %th Title
+              %th URL
+              %th コメント
+              %th
+            - @posts.each do|post|
+              %tr
+                %td= post.title
+                %td= link_to "アクセス", "#{post.url}"
+                %td=  post.comment
+                %td= link_to "編集", edit_post_path(post), class: 'btn btn-warning btn-xs'
+      - else
+        %h1 no contents
